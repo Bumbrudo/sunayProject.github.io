@@ -1,0 +1,91 @@
+@import mixins
+@import media
+@import sprites
+@import normalize
+
+
+$font-weight: 400
+$font-size: 14px
+$line-height: 1.4
+$font-family: "Varela Round" 
+$font-family2: 'Oswald'
+$font-family3: "PT Serif"
+$color: #222
+$color-blue: #1f4ba5
+$wrapper: 1200px
+
+
+body 	
+	color: $color
+	font: $font-weight $font-size/$line-height $font-family, Arial, sans-serif
+	background: #FFF
+
+/* MAIN STYLES
+/* ================================================ */
+
+.main-wrapper
+	padding: 0
+	min-width: 320px
+	position: relative 
+	overflow: hidden
+	opacity: 1
+	min-height: 100% 
+
+
+
+img
+	display: block
+	max-width: 100%
+
+span 
+	display: inline-block
+
+/* text position */
+
+.text-left
+	text-align: left !important
+
+.text-center
+	text-align: center !important
+
+.text-right
+	text-align: right !important
+
+
+/* Icons
+     ====================== */
+.ic 
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	// background: $icons no-repeat
+
+// @each $i in next, prev
+// 	.ic--#{$i}
+// 		+s(ic--#{$i})
+
+
+.header 
+	height: 80px
+	background-color: #ffffff
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 0 30px
+	border-bottom: 1px solid #ececec
+
+.main-menu
+	list-style: none
+	display: flex
+	&_item
+		position: relative
+	&_link
+		color: $color 
+		font-size: 14px
+		outline: 1px solid red
+		display: block
+		padding: 0 20px
+		[class*="icon"]
+			font-size: 8px
+			color: $color-blue
+
